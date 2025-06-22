@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Lookup</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        function lookup() {
+            let prodCode = $("#prodCode").val();
+            //let message = "Product " + prodCode + " is Digestive Biscuits";
+            $.post("lookup.php", { prodCode: prodCode }, function (message) { $("#productDetails").html(message); });
+            //
+            // 
+        }
+    </script>
+</head>
+<body>
+    <main>
+        <h1>Find product details</h1>
+        <label for="prodCode">Enter the product code</label>
+        <input type="text" id="prodCode">
+        <button onclick = "lookup()">Look up code</button>
+        <div id="productDetails"></div>
+    </main>
+</body>
+</html>

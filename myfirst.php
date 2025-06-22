@@ -43,6 +43,7 @@
             $margin = 50;
             for($i=0; $i<$number; $i++) {
 			    echo('<h2 style = "margin-left: ' . $margin .  'px" >Hello World from Nick</h2>');
+                echo("\r\n");
                 $margin += 100;
 		    }
             
