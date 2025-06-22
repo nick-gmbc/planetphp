@@ -31,3 +31,14 @@ a:hover {
 footer {
     margin-top: 100px;
 }
+
+.thumb {
+    width: 180px;
+}
+
+.gallerypic {
+    margin: 20px;
+    padding: 10px;
+    border: solid, 3px;
+
+}
