@@ -1,0 +1,14 @@
+body {
+    background-color: blanchedalmond;
+    color:darkslategray;
+}
+.mymenustyle {
+    background-color: blanchedalmond;
+    color:darkslategray;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.mycol {
+    color: darkslategray;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}

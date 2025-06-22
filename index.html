@@ -5,23 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Planet PHP</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
-    
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <nav class="navbar navbar-expand-lg mymenustyle">
             <div class="container-fluid">
             <a class="navbar-brand" href="index.html">Planet PHP</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
+                <ul class="navbar-nav " >
+                    <li class="nav-item" >
                         <a class="nav-link active" aria-current="page" href="#">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">My First PHP Script</a>
+                        <a class="nav-link mycol" href="#">My First PHP Script</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Product Lookup</a>
@@ -42,22 +42,81 @@
             <div class="row" style="margin-left: -20px">
                 <div class="col-sm-4">
                     <h2 style="margin-left: 0px">What is PHP?</h2>
-                    PHP (Hypertext Preprocessor) is a widely-used, open-source server-side scripting language designed for web development. Created by Rasmus Lerdorf in 1994, PHP allows developers to build dynamic and interactive websites by embedding scripts directly within HTML.
+                    <p>PHP (Hypertext Preprocessor) is a widely-used, open-source server-side 
+                    scripting language designed for web development. Created by Rasmus Lerdorf 
+                    in 1994, PHP allows developers to build dynamic and interactive websites by 
+                    embedding scripts directly within HTML.</p>
 
-                    When a PHP script runs, it is processed on the server, and the resulting output—usually HTML—is sent to the user's web browser. This server-side execution makes PHP ideal for tasks like handling forms, managing sessions, interacting with databases, and creating customized page content based on user input.
+                    <p>When a PHP script runs, it is processed on the server, and the resulting 
+                    output—usually HTML—is sent to the user's web browser. This server-side 
+                    execution makes PHP ideal for tasks like handling forms, managing sessions, 
+                    interacting with databases, and creating customized page content based on user 
+                    input.</p>
 
-                    One of PHP's main strengths is its simplicity and ease of use, even for beginners. At the same time, it offers advanced features for experienced developers, including support for object-oriented programming and integration with a wide range of databases like MySQL, PostgreSQL, and SQLite.
+                    <p>One of PHP's main strengths is its simplicity and ease of use, even for beginners. 
+                    At the same time, it offers advanced features for experienced developers, 
+                    including support for object-oriented programming and integration with a wide
+                     range of databases like MySQL, PostgreSQL, and SQLite.</p>
 
-                    PHP is the backbone of many popular content management systems, including WordPress, Joomla, and Drupal. It also powers a large portion of the web, thanks to its compatibility with most hosting services and its ability to run on multiple platforms.
+                    <p>PHP is the backbone of many popular content management systems, including 
+                        WordPress, Joomla, and Drupal. It also powers a large portion of the web, thanks 
+                        to its compatibility with most hosting services and its ability to run on 
+                        multiple platforms.</p>
 
-                    With ongoing updates and modern frameworks like Laravel and Symfony, PHP continues to be a reliable and powerful tool for building fast, scalable web applications.
+                    <p>With ongoing updates and modern frameworks like Laravel and Symfony, PHP 
+                        continues to be a reliable and powerful tool for building fast, scalable web 
+                        applications.</p>
 
                 </div>
                 <div class="col-sm-4">
                     <h2>Capabilities of PHP</h2>
+                        <p>PHP provides strong support for session management, which is essential 
+                            for developing login systems, shopping carts, and other user-interactive 
+                            applications. It includes built-in functions for file handling, allowing 
+                            reading, writing, and uploading files via web forms. Error handling is 
+                            flexible and customizable, with options for logging and displaying errors.</p>
+
+                        <p>
+                            PHP also supports object-oriented programming (OOP), enabling modular, 
+                            reusable, and scalable code structures. It offers extensive libraries and 
+                            frameworks like Laravel, Symfony, and CodeIgniter, which simplify and speed 
+                            up development processes.
+                        </p>
+                        <p>
+                            Security features such as input validation, data sanitization, 
+                            and tools to prevent SQL injection and cross-site scripting (XSS) 
+                            are readily available. Additionally, PHP supports communication 
+                            with other services via APIs, JSON, and XML.
+                        </p>
+                        <p>
+                            Finally, PHP is highly portable and supported by almost all web servers 
+                            and operating systems, making it an ideal choice for a wide range of
+                             web-based projects.
+                        </p>
                 </div>
                 <div class="col-sm-4">
                     <h2>Problems of PHP</h2>
+
+
+                    <p>
+                        Security is a concern. Although PHP has improved over time, inexperienced developers can easily 
+                        write vulnerable code if proper precautions like input validation and prepared statements 
+                        aren’t used. Older PHP codebases often lack modern security practices, making maintenance risky.
+                    </p>
+                    <p>
+                        Performance can be an issue for larger applications. PHP is interpreted at 
+                        runtime, which generally makes it slower than compiled languages. While 
+                        tools like OPCache and Just-In-Time compilation help, performance still lags 
+                        behind more modern alternatives like Node.js or Go in some cases.
+                    </p>
+                    <p>
+                        PHP’s flexibility can also lead to poor coding practices. It allows multiple ways to 
+                        achieve the same result, which can lead to inconsistent code and difficulties in maintaining large 
+                        projects. Additionally, legacy code and outdated tutorials can mislead newcomers, making it
+                         harder to adopt best practices from the beginning.
+                    </p>
+
+                 
                 </div>
             </div>
         </div>
