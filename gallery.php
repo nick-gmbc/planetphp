@@ -6,6 +6,14 @@
     <title>Planet PHP</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css">
+    <script>
+        function showPicture(picLocation) {
+            var pictureWindow = window.open("","","");
+            imgTag = '<img width="100%" src="' + picLocation + '">';
+            pictureWindow.document.write(imgTag);
+        }
+    </script>
+
 </head>
 <body>
     <h1>Gallery</h1>
@@ -20,8 +28,8 @@
             {
 
                 echo '<div class = "col-sm-4">';
-            
-                echo '<img class="thumb gallerypic" src="uploads/' . $pictures[$i] . '" >';
+                $file_path = "uploads/" . $pictures[$i];
+                echo '<img class="thumb gallerypic" src="' . $file_path . '" onclick=showPicture("' . $file_path . '")>' ;
                 echo '</div>';
                 
             }
